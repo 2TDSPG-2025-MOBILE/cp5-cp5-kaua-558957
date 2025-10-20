@@ -1,272 +1,179 @@
-# CP5 - Calculadora Científica
+<h1 align="center">🔮 Calculadora Científica</h1>
 
-## Objetivo
-Desenvolver uma **Calculadora Científica** utilizando **React Native**, aplicando os conceitos de componentes, estado, estilização e lógica de programação aprendidos em aula.
+<p align="center">
+  <b>Um aplicativo mobile moderno com design tecnológico e tema escuro, desenvolvido em React Native + Expo Router.</b>
+</p>
 
----
-
-## Descrição do Projeto
-
-Você deverá criar uma calculadora científica funcional que permita ao usuário realizar operações matemáticas básicas e científicas. O projeto deve seguir boas práticas de desenvolvimento, com código organizado, comentado e de fácil compreensão.
-
----
-
-##  Requisitos Técnicos
-
-### **Tecnologias Obrigatórias:**
-- React Native
-- Expo (recomendado para facilitar o desenvolvimento)
-- Hooks do React (useState, useEffect se necessário)
-
-### **O que deve ser entregue:**
-- Código-fonte completo do projeto
-- Arquivo README.md explicando como executar o projeto
-- Prints ou vídeo curto demonstrando o funcionamento
+<p align="center">
+  <img src="https://img.shields.io/badge/React%20Native-0D1117?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/Expo-1B1B1D?style=for-the-badge&logo=expo&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-0F0F10?style=for-the-badge&logo=typescript&logoColor=3178C6"/>
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-141414?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8"/>
+</p>
 
 ---
 
-##  Funcionalidades Obrigatórias
+## 🚀 Sobre o Projeto
 
-### **1. Interface do Usuário**
-- Display para mostrar a operação atual e o resultado
-- Botões numéricos de 0 a 9
-- Botões para operações básicas: adição (+), subtração (-), multiplicação (×) e divisão (÷)
-- Botão de igual (=) para executar o cálculo
-- Botão para limpar tudo (C ou AC)
-- Botão para apagar o último dígito (DEL ou ⌫)
-- Layout organizado e responsivo
+O **Calculadora Científica** é um app mobile criado com **React Native** e **Expo Router**, projetado para oferecer uma experiência fluida e tecnológica.  
+Com uma interface **escura, moderna e minimalista**, o app realiza cálculos básicos e exibe uma aba “Explorar” para recursos futuros.
 
-### **2. Operações Básicas**
-Sua calculadora deve realizar corretamente:
-- Adição
-- Subtração
-- Multiplicação
-- Divisão
-- Cálculos sequenciais (ex: 5 + 3 - 2 = 6)
-
-### **3. Operações Científicas**
-Implemente as seguintes funções científicas:
-- **Potência**: x² (elevar ao quadrado)
-- **Raiz Quadrada**: √ (raiz quadrada)
-- **Trigonometria**: sin, cos, tan
-- **Porcentagem**: % (calcular porcentagem)
-- **Constantes**: π (número Pi)
-- **Decimais**: permitir números com vírgula/ponto
-
-### **4. Tratamento de Erros**
-- Divisão por zero deve exibir mensagem de erro
-- Operações inválidas devem ser tratadas adequadamente
-- Não permitir múltiplas operações consecutivas sem números
+> 💡 Projeto desenvolvido para a **CP5 - FIAP 2025**.
 
 ---
 
-## Funcionalidades Bônus (Opcional)
-
-### **Bônus 1: Histórico de Cálculos** (+10 pontos)
-- Armazenar os últimos 5 cálculos realizados
-- Exibir o histórico em uma lista visível ou em modal
-- Botão para limpar o histórico
-
-### **Bônus 2: Tema Claro/Escuro** (+10 pontos)
-- Implementar alternância entre modo claro e escuro
-- Botão de toggle para trocar entre os temas
-- Cores e estilos diferentes para cada modo
-- Transição suave entre os temas
-
----
-
-## Critérios de Avaliação
-
-### **1. Estrutura e Organização do Projeto (15 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Componentes separados em arquivos diferentes | 5 pts |
-| Código comentado explicando cada parte | 5 pts |
-| Nomenclatura clara de variáveis e funções | 5 pts |
-
-** Dica:** Crie arquivos separados para o Display, Botões e Tela principal. Comente explicando o que cada função faz e por quê!
-
----
-
-### **2. Interface do Usuário (20 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Layout responsivo e bem organizado | 8 pts |
-| Display mostrando operação e resultado | 7 pts |
-| Botões numéricos e de operações básicas | 5 pts |
-
-** Dica:** Use StyleSheet do React Native. Pense na experiência do usuário - botões grandes e fáceis de clicar!
-
----
-
-### **3. Funcionalidades Básicas (25 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Operações básicas (+, -, ×, ÷) funcionando | 8 pts |
-| Botão de limpar (C ou AC) | 5 pts |
-| Botão de apagar último dígito (DEL) | 5 pts |
-| Botão de igual (=) calculando corretamente | 4 pts |
-| Tratamento de erros (divisão por zero, etc.) | 3 pts |
-
-** Dica:** Teste cada operação várias vezes! Tente quebrar sua calculadora para encontrar bugs.
-
----
-
-### **4. Funcionalidades Científicas (25 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Operação de potência (x²) | 5 pts |
-| Raiz quadrada (√) | 5 pts |
-| Funções trigonométricas (sin, cos, tan) | 5 pts |
-| Porcentagem (%) | 5 pts |
-| Número Pi (π) e números decimais | 5 pts |
-
-** Dica:** Use Math.pow(), Math.sqrt(), Math.sin(), etc. do JavaScript. Lembre-se que as funções trigonométricas trabalham com radianos!
-
----
-
-### **5. Lógica e Estado (15 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Gerenciamento correto do estado com useState | 8 pts |
-| Lógica de cálculo funcionando sequencialmente | 7 pts |
-
-** Dica:** Planeje seu estado antes de começar a codificar. O que precisa ser armazenado? Número atual? Operação selecionada? Resultado anterior?
-
----
-
-### **6. Funcionalidades Bônus (Opcional)**
-
-#### **Bônus 1: Histórico de Cálculos (+10 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Armazenar últimos 5 cálculos | 4 pts |
-| Exibir histórico em lista rolável | 3 pts |
-| Permitir limpar o histórico | 3 pts |
-
-#### **Bônus 2: Modo Claro/Escuro (+10 pontos)**
-| Critério | Pontos |
-|----------|--------|
-| Botão de alternância entre temas | 4 pts |
-| Cores diferentes para cada modo | 4 pts |
-| Transição suave entre temas | 2 pts |
-
----
-
-## Pontuação Final
-
-| Categoria | Pontos Possíveis |
-|-----------|------------------|
-| **Total Base** | 100 pontos |
-| **Bônus 1** | +10 pontos |
-| **Bônus 2** | +10 pontos |
-| **MÁXIMO** | 120 pontos |
----
-
-## Estrutura de Pastas Sugerida
+## 🧭 Estrutura do Projeto
 
 ```
-calculadora-cientifica/
-├── App.js
-├── src/
-│   ├── components/
-│   │   ├── Display.js          // Exibe o resultado
-│   │   ├── Button.js           // Botão individual
-│   │   ├── ButtonGrid.js       // Grade de botões
-│   │   └── HistoryList.js      // (Bônus 1)
-│   ├── screens/
-│   │   └── CalculatorScreen.js // Tela principal
-│   └── utils/
-│       └── calculations.js     // Funções de cálculo
-└── README.md
+app/
+ ├── (tabs)/
+ │    ├── _layout.tsx        → Define as abas inferiores (Home, Calculadora, Explorar)
+ │    ├── index.tsx          → Tela inicial do aplicativo
+ │    ├── calculator.tsx     → Tela principal da calculadora científica
+ │    └── explore.tsx        → Tela de recursos e futuras funcionalidades
+ ├── _layout.tsx             → Layout global (Stack principal)
+ └── modal.tsx               → Modal para futuras extensões
 ```
 
 ---
 
-## Boas Práticas Obrigatórias
+## ⚙️ Instalação e Execução
 
-### **1. Comentários no Código**
-```javascript
-// ERRADO - Sem comentários
-const [num, setNum] = useState(0);
-
-// CORRETO - Com explicação
-// Estado que armazena o número atual digitado pelo usuário
-const [currentNumber, setCurrentNumber] = useState('0');
+### 1️⃣ Clonar o repositório
+```bash
+git clone https://github.com/2TDSPG-2025-MOBILE/cp5-cp5-kaua-558957.git
+cd cp5-cp5-kaua-558957
 ```
 
-### **2. Separação de Componentes**
-```javascript
-// ERRADO - Tudo em um arquivo só
-// ... 500 linhas de código ...
-
-// CORRETO - Componentes separados
-// Display.js - apenas o display
-// Button.js - apenas o botão
-// CalculatorScreen.js - lógica principal
+### 2️⃣ Instalar as dependências
+```bash
+npm install
 ```
 
-### **3. Nomenclatura Clara**
-```javascript
-// ERRADO - Nomes confusos
-const x = () => { ... }
-const btn = () => { ... }
+### 3️⃣ Rodar o projeto
+```bash
+npx expo start
+```
 
-// CORRETO - Nomes descritivos
-const calculateResult = () => { ... }
-const handleButtonPress = () => { ... }
+Abra o app no **Expo Go** (Android/iOS) ou execute em um **emulador**.
+
+---
+
+## 🎨 Design e Estilo
+
+O projeto adota uma estética **tech minimalista**, com o foco em contraste, legibilidade e fluidez.
+
+| Função | Cor |
+|--------|-----|
+| **Primária** | `#6b256f` (Roxo tecnológico) |
+| **Secundária** | `#194b32` (Verde escuro) |
+| **Terciária** | `#c45d1d` (Laranja metálico) |
+| **Fundo** | `#0f0f10` → `#1b1b1d` |
+
+---
+
+## 🧩 Funcionalidades
+
+### 🏠 **Tela Inicial**
+- Apresentação do aplicativo.
+- Botão para acessar diretamente a Calculadora.
+
+### 🧮 **Calculadora Científica**
+- Interface moderna com botões reativos.
+- Cálculos básicos: `+, -, *, /, .`
+- Botão **C** para limpar expressões.
+- Exibição de resultado com design tecnológico.
+
+### 🌌 **Explorar**
+- Recursos futuros planejados:
+  - Modo científico completo (log, sen, cos, raiz, etc.)
+  - Tema dinâmico com animações.
+  - Sincronização de histórico via API.
+
+---
+
+## 🧠 Tecnologias Utilizadas
+
+| Tecnologia | Descrição |
+|-------------|------------|
+| ⚛️ **React Native** | Framework principal para apps mobile. |
+| 🧭 **Expo Router** | Navegação moderna baseada em arquivos. |
+| 🎨 **NativeWind + TailwindCSS** | Estilização rápida e responsiva. |
+| 🌈 **expo-linear-gradient** | Gradientes suaves e elegantes. |
+| 🧱 **TypeScript** | Tipagem estática e segurança no código. |
+| 🧩 **@expo/vector-icons** | Ícones modernos e compatíveis. |
+
+---
+
+## 🧰 Instalações Extras
+
+Caso falte alguma dependência, execute:
+
+```bash
+npx expo install expo-linear-gradient @expo/vector-icons
+npm install nativewind tailwindcss
+npx tailwindcss init
+```
+
+Configure o **Tailwind** em `tailwind.config.js`:
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./App.{js,jsx,ts,tsx}", "./app/**/*.{js,jsx,ts,tsx}"],
+  theme: { extend: {} },
+  plugins: [],
+};
 ```
 
 ---
 
-## Prazo de Entrega
+## 🖼️ Demonstração (Preview)
 
-**Data de Entrega:** 20/10/2025 12h09min
+<p align="center">
+  <img src="https://github.com/kauazipf/assets/raw/main/calculadora-preview.png" width="280px" />
+</p>
 
-**Formato de Entrega:**
-- Link do repositório GitHub (preferencial)
-- OU arquivo .zip com o projeto completo
-- Incluir README.md com instruções de como executar
-
----
-
-## Atenção!
-
-### **Será descontado pontos se:**
-- Código sem comentários explicativos
-- Tudo em um único arquivo
-- Funções não funcionarem corretamente
-- Código copiado sem entendimento (plágio será penalizado)
-- Não seguir a estrutura de pastas sugerida
-
-### **Pontos extras por:**
-- Código muito bem organizado e comentado
-- Criatividade no design (sem perder funcionalidade)
-- README.md bem escrito e detalhado
-- Commits organizados no GitHub
+> Interface escura com abas modernas e tipografia tecnológica.
 
 ---
 
-## Dúvidas?
+## 🧑‍💻 Autor
 
-- Tire suas dúvidas **antes** do prazo de entrega
-- Consulte a documentação oficial do React Native
-- Revise os conceitos vistos em aula
-- Use console.log() para debugar seu código
+- **Kauã Zipf - RM558957**  
+
+- **Caetano Penafiel - RM557984** 
+
+- **Victor Egidio - RM556653** 
+
+- **Diego Bassalo - RM558710** 
+
+- **Jennifer Kaori  - RM554661** 
+
+- **Felipe Levy - RM556426** 
+
+📚 Curso: Desenvolvimento Mobile — FIAP  
+📅 Projeto: CP5 - 2025  
+🌐 [GitHub](https://github.com/kauazipf)
 
 ---
 
-## Objetivo de Aprendizado
+## 🧱 Melhorias Futuras
 
-Esta atividade avalia sua capacidade de:
-- Criar interfaces com React Native
-- Gerenciar estado com Hooks
-- Implementar lógica de programação
-- Organizar e documentar código
-- Resolver problemas de forma independente
+- 🔢 Implementar funções científicas completas.  
+- ☁️ Sincronizar histórico via API.  
+- 💾 Salvar preferências de tema localmente.  
+- ⚡ Adicionar animações com Framer Motion.  
+- 🧠 Criar modo educacional interativo.
 
 ---
 
-**Boa sorte e bom código! 🚀**
+## 📜 Licença
 
-*Lembre-se: código limpo e bem comentado vale mais que código complexo e confuso!*
+Este projeto é de uso **educacional** e faz parte da **CP5 - FIAP 2025**.  
+Distribuído sob a **Licença MIT** — livre para estudo e modificação.
+
+---
+
+<p align="center">
+  <b>✨ “Tecnologia e lógica em harmonia — uma calculadora além dos números.”</b>
+</p>
