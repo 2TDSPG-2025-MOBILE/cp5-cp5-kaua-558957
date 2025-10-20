@@ -139,7 +139,12 @@ module.exports = {
 
 ## 🧑‍💻 Autor
 
-**Kauã Zipf**  
+**Kauã Zipf - RM558957**  
+**Caetano Penafiel - RM557984** 
+**Victor Egidio - RM556653** 
+**Diego Bassalo - RM558710** 
+**Jennifer Kaori  - RM554661** 
+**Felipe Levy - RM556426** 
 📚 Curso: Desenvolvimento Mobile — FIAP  
 📅 Projeto: CP5 - 2025  
 🌐 [GitHub](https://github.com/kauazipf)
